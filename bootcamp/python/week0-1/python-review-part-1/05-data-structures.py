@@ -44,11 +44,9 @@ b += ', world!'
 # print(q.popleft())
 # print(q.popleft())
 
-# List Comprehension
-# list_variable = [x for x in iterable]
-# l = range(100)
-# uneven = [x**2 for x in l]
-# print(uneven)
+
+
+"""matrix"""
 
 # l = [0] * 1000
 # print(l)
@@ -62,7 +60,9 @@ b += ', world!'
 # matrix[0][1] = 1
 # print(matrix)
 
-# slicing
+
+"""slicing"""
+
 
 # [1,  2,  3,  5,  7,  9]
 #  0   1   2   3   4   5
@@ -74,37 +74,16 @@ b += ', world!'
 # print(l)
 # print(s1)
 
-# when does a list grow its size?
-# https://github.com/python/cpython/blob/main/Objects/listobject.c#L63
 
-# l = ['1', '123', '2']
-# l = list(map(int, l))
-# uneven = list(filter(lambda x: x % 2 == 1, l))
+l = ['1', '123', '2']
+l = list(map(int, l)) #cast int
+uneven = list(filter(lambda x: x % 2 == 1, l)) #fard bashd
 # uneven = [x for x in l if x % 2 == 1]
-# print(uneven)
+print(uneven)
 
-# append
-# clear
-# copy
-# count
-# extend
-# index
-# insert
-# pop
-# remove
-# reverse
-# [::-1]
-# sort
 
-# tuple
-
-# l = [1, 2, 3]
-# t = (l,)
-# l.append(2)
-# print(t)
 
 # dict
-
 # d = {
 #     'Ali': '09123456789',
 #     'Reza': '09123456782',
@@ -125,24 +104,10 @@ b += ', world!'
 # squares = {x: x * x for x in range(6)}
 # print(squares)
 
-# Collision Resolution:
-# https://www.scaler.com/topics/data-structures/open-addressing/
 
-# How python dictionaries work (see the "Python dictionaries" section):
-# https://tenthousandmeters.com/blog/python-behind-the-scenes-10-how-python-dictionaries-work/
 
-# Open addressing vs. separate chaining:
-# https://mathcenter.oxford.emory.edu/site/cs171/collisionResolution/
-# https://cseweb.ucsd.edu/~kube/cls/100/Lectures/lec16/lec16-25.html
-
-# collections.OrderedDict
-from collections import defaultdict
-
-d = defaultdict(lambda: 0)
-print(d[2])
 
 # set
-
 # s = {'a', 'e', 'i', 'o', 'u'}
 # print(s)
 # s.add('b')
@@ -169,8 +134,6 @@ print(d[2])
 # s = {l}
 # print(s) # error
 
-# A bit different from dict when handling collisions (see the "A note on sets" section):
-# https://tenthousandmeters.com/blog/python-behind-the-scenes-10-how-python-dictionaries-work/
 
 # priority queue (heap)
 # from queue import PriorityQueue
