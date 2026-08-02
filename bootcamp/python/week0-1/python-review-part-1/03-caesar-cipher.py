@@ -22,3 +22,15 @@ for i in range(len(s)):
 print(''.join(s))
 
 # a % b
+
+
+# s = list(input())
+# n = int(input())
+# for i in range(len(s)):
+#     char_ord = ord(s[i])
+#     char_ord -=97
+#     char_ord += n
+#     char_ord %= 26
+#     char_ord+=97
+#     s[i] = chr(char_ord)
+# print(''.join(s))
