@@ -1,5 +1,13 @@
 import re
-import requests
+# import requests
+
+# find -> if exist or not
+s = 'foot132bar'
+if re.search('1.2', s):
+    print('found match')
+else:
+    print('no match')
+
 
 # r = requests.get('https://quera.org/blog/')
 # print(re.findall(r'<h4> <a href="(.*)">(.*)</a></h4>', r.text))
@@ -27,7 +35,7 @@ s = """
 #abacad
 """
 
-print(re.findall(r'(#([0-9a-f]{2})\2{2,})', s))
+# print(re.findall(r'(#([0-9a-f]{2})\2{2,})', s))
 
 # re.findall(pattern, string, flags=re.I|re.M|re.X)
 # re.sub('[a-z]+@', 'ABC@', s)
