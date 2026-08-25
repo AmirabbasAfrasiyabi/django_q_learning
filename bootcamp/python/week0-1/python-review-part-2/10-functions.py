@@ -14,7 +14,7 @@ x = fib
 print(x(8))
 print(fib.__name__)
 print(x.__name__)
-# print(fib.__name__)
+print(fib.__name__)
 print(x.__doc__)
 
 
@@ -31,20 +31,29 @@ def caesar_encrypt(s, n=7):
 
 
 def caesar_decrypt(s, n=7):
+
     return caesar_encrypt(s, 26 - (n % 26))
 
+# def reverse_string(s):
+#     return s[::-1]
+#
+# def string_to_make_upper(s):
+#     return s.upper()
 
 funcs = [
     caesar_encrypt,
+    # reverse_string,
+    # string_to_make_upper,
     lambda s: s[::-1],
     str.upper,
 ]
 
-# s = 'helloworld'
-# for func in funcs:
-#     s = func(s)
-# print(s)
-# print(type(s))
+s = 'helloworld'
+for func in funcs:
+    s = func(s)
+print(s)
+print(type(s))
+
 
 # def mySum(*args):
 #     print(args)
