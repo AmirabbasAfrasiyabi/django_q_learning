@@ -35,23 +35,4 @@ b = 10
 
 # print(f'Hey {name}, there is a {errno:#x} error!')
 
-"""
-    Template Strings
-"""
 
-from string import Template
-t = Template('Hey, $name!')
-# print(t.substitute(name=name))
-
-# Safer than f-strings:
-
-SECRET = 'this-is-a-secret'
-class Error:
-    def __init__(self):
-        pass
-err = Error()
-# user_input = '{error.__init__.__globals__[SECRET]}'
-# print(user_input.format(error=err))
-
-user_input = '${error.__init__.__globals__[SECRET]}'
-Template(user_input).substitute(error=err)

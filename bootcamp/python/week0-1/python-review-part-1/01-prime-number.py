@@ -21,20 +21,24 @@ from math import sqrt
 # is_prime(13)
 
 """solution1 -> way 2"""
-# n = int(input())
+# n = int(input("Enter a number: "))
 # is_prime = True
-# for i in range(2, n):
+# for i in range(2,n):
 #     if n % i == 0:
 #         is_prime = False
 #         break
+# if is_prime:
+#     print("n is prime")
+# else:
+#     print("n is not prime")
 # print(is_prime)
 
 
 """solution2 -> way 1"""
-def is_prime(n):
-    if n < 2:
-        return False
-    is_prime = True
+# def is_prime(n):
+#     if n < 2:
+#         return False
+#     is_prime = True
 
     # for i in range(2, n//2 ): #-> error
 
@@ -43,48 +47,51 @@ def is_prime(n):
         # 2 is prime
         # 4 //2 == 2
 
-    for i in range(2, n//2 + 1):
-        if n % i == 0:
-            is_prime = False
-            break
-    if is_prime:
-        print("n is prime")
-    else:
-        print("n is not prime")
-is_prime(4)
+#     for i in range(2, n//2 + 1):
+#         if n % i == 0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         print("n is prime")
+#     else:
+#         print("n is not prime")
+# is_prime(4)
 
 """solution2 -> way 2"""
 # n = int(input())
-# is_prime = True
-# for i in range(2, n//2 + 1):
+# isPrime = True
+# for i in range(1, n//2 +1):
 #     if n % i == 0:
-#         is_prime = False
-#         break
-# print(is_prime)
-
+#         isPrime = False
+# if isPrime:
+#     print('n is prime')
+# else:
+#     print('n is not prime')
 
 
 """solution3 -> way 1"""
-def is_prime(n):
-    if n < 2:
-        return False
-    is_prime = True
-
-    for i in range(2, int(sqrt(n)) + 1):
-        if n % i == 0:
-            is_prime = False
-            break
-    if is_prime:
-        print("n is prime")
-    else:
-        print("n is not prime")
-is_prime(4)
+# def is_prime(n):
+#     if n < 2:
+#         return False
+#     is_prime = True
+#
+#     for i in range(2, int(sqrt(n)) + 1):
+#         if n % i == 0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         print("n is prime")
+#     else:
+#         print("n is not prime")
+# is_prime(4)
 
 """solution3 -> way 2"""
 # n = int(input())
-# is_prime = True
+# isPrime = True
 # for i in range(2, int(sqrt(n)) + 1):
 #     if n % i == 0:
-#         is_prime = False
-#         break
-# print(is_prime)
+#         isPrime = False
+# if isPrime:
+#     print('n is prime')
+# else:
+#     print('n is not prime')
