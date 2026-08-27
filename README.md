@@ -1,1 +1,1 @@
-# django_q_learning
+# django_q_learning for bootcamp
