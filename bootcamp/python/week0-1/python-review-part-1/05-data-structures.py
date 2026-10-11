@@ -168,7 +168,9 @@ l = [1,
      7,
      9,
      ]
+
 #print(i,j-1)
+
 # print(l[:5])
 # print(l[5:])
 # print(l[5: 13])
@@ -230,21 +232,21 @@ d = {
 # print(d['Ali'])
 # print(d['Reza'])
 
-print('-- add:')
+# print('-- add:')
 d['Maman'] = '09120781057'
 # print(d)
 
 # for key in d.keys():
-#     print(key)
+    # print(key)
 # for value in d.values():
-#     print(value)
+    # print(value)
 # for key, value in d.items():
-#     print(key, value)
+    # print(key, value)
 
 # if 'Ali' in d:
-#     print('Yes')
+    # print('Yes')
 
-# del d['Ali']
+del d['Ali']
 # print(d['Reza'])
 
 """set"""
@@ -253,8 +255,8 @@ s = {'a', 'e', 'i', 'o', 'u',1,2,1,3,2,1,3,1}
 # s.add([1,2,3]) # error ("dont use dict ore list in set -> hash type")
 
 # print(s)
-# print(len(s))
-# print(1 in s)
+print(len(s))
+print(1 in s)
 #
 # print('--add--')
 # s.add('b')
@@ -269,9 +271,9 @@ s = {'a', 'e', 'i', 'o', 'u',1,2,1,3,2,1,3,1}
 # print(s)
 # print(b in s)
 
-# s1 = s
-# s2 = {1, 2, 3, 4, 'a', 'b'}
-
+s1 = s
+s2 = {1, 2, 3, 4, 'a', 'b'}
+#
 # print(s1 | s2) # union
 # print(s1 & s2) # intersection
 # print(s1 - s2) # difference
@@ -293,26 +295,34 @@ because the the set member are Hashable
 
 """for - while"""
 
-#example1
-count = 5
-while count > 0:
-    print("counting" + str(count))
-    count -= 1
+print("----- example 1 ----")
+# count = 5
+# while count > 0:
+#     print('continue' + str(count))
+#     count -= 1
 
-#example2
-for i in range(2,10,3):
-    print(i)
+print("----- example 2 ----")
+# for i in range (2,10,3):
+#     print(i)
 
-#example3
-l = ['abc','def','asd']
-for i in l:
-    print(i)
+print("----- example 3 ----")
+for key in d:  # you can iterate dictionaries too!
+    print(key, ':', d[key])
 
-#example4
-a = [9135233333, 9123222233, 9212312121]
-b = ['iman', 'rasoul', 'fateme']
-for x, y in zip(a, b):
-    print(x, y)
+print('-----------')
+
+print(list(d.items()))
+
+for key, value in d.items():
+    print(key, ':', value)
+
+
+
+print("----- example 4 ----")
+# a = [9135233333, 9123222233, 9212312121]
+# b = ['iman', 'rasoul', 'fateme']
+# for x, y in zip(a, b):
+#     print(x, y)
 
 
 """heapq"""
