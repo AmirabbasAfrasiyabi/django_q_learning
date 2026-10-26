@@ -6,16 +6,17 @@ def fib(n):
     """
         Calculates the nth term of fibonacci sequence
     """
-    if n <= 2:
+    # if n <= 2:
+    if n in [1,2]:
         return 1
     return fib(n - 1) + fib(n - 2)
 
 x = fib
-print(x(8))
-print(fib.__name__)
-print(x.__name__)
-print(fib.__name__)
-print(x.__doc__)
+# print(x(25))
+# print(fib.__name__)
+# print(x.__name__)
+# print(fib.__name__)
+# print(x.__doc__)
 
 
 # Functions can be stored in data structures
@@ -51,38 +52,48 @@ funcs = [
 s = 'helloworld'
 for func in funcs:
     s = func(s)
-print(s)
-print(type(s))
-
+# print(s)
+# print(type(s))
 
 # def mySum(*args):
 #     print(args)
 #     return sum(args)
-
 # args = [1, 2, 3, 4]
 # print(mySum(*args))
 
 # def fun(*args, **kwargs): # packing
 #     print(args)
 #     print(kwargs)
-
 # fun(*[1, 2, 3], a=1, b={'b': 6}, c='s') # unpacking
 
-def my_print(*args, end='\n', sep=' '):
-    print(*args, **kwargs)
-
+# def my_print(*args, end='\n', sep=' '):
+#     print(*args, **kwargs)
 # my_print(1, 2, end='')
 # my_print(1, 2)
+
+# def my_sum(*args):
+#     return sum(args)
+# print(my_sum(1,2,3,4))
+
+# def fun(a,b,c):
+#     print(a,b,c)
+# arg = [1,2,3]
+# fun(*arg)
+
+# def fun(a,b,c):
+#     print(a,b,c)
+# d = {'a' : 1 , 'b' : 2, 'c' : 3}
+# fun(**d)
 
 # def f(a=2, b=3):
 #     print(a, b)
 # f(None, 4)
 
-# a = 2
-# b = 3
-# l = [2, 3]
-# a, b = 2, 3
-# print(a, b)
+
+# my_list = [1,2,3,4,5,]
+# a,b,*rest = my_list
+# print(a,b,rest)
+
 
 # Functions can be passed to other functions
 
@@ -109,7 +120,4 @@ def my_print(*args, end='\n', sep=' '):
 #
 # print(g('hello'))
 
-# Inner functions can also capture and
-# carry some of the parent function’s state with them
 
-# Objects can behave like functions

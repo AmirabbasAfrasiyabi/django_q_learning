@@ -29,10 +29,24 @@ l.sort(reverse=True)
 
 
 #copy
+"""incorrect"""
+# l2 = l
+# l2[0] = 2
+# print(l2)
+# print(l)
+
+"""correct"""
+l = [1,2,3,4,5,6,7,8,9]
 l2 = l.copy()
 l2[0] = 123
 # print(l2)
 
+# Copy on write
+a = 'Hello'
+# b = a
+# b += ', world!'
+# print(a)
+# print(b)
 
 l2.insert(1, 3)
 # print(l2)
@@ -42,15 +56,6 @@ l2.extend([5, 12])
 # l2 += [5, 12]
 # print(l)
 # print(l2)
-
-
-# Copy on write
-a = 'Hello'
-# b = a
-# b += ', world!'
-# print(a)
-# print(b)
-
 
 
 # stack (LIFO: Last in first out)
@@ -176,7 +181,7 @@ l = [1,
 # print(l[5: 13])
 
 """copy"""
-# s1 = l.copy() # copy
+# s1 = l.copy()
 s1 = l[::]
 
 l[0] = 6
@@ -223,8 +228,8 @@ a, b, c = c, b, a  # 3-way swap in one statement!
 d = {
     'Ali': '09123456789',
     'Reza': '09123456782',
-     'Amirabbas':'09120910309',
-     'Atiye':'09120034660',
+    'Amirabbas':'09120910309',
+    'Atiye':'09120034660',
 }
 
 # print(d)
@@ -252,12 +257,7 @@ del d['Ali']
 """set"""
 s = {'a', 'e', 'i', 'o', 'u',1,2,1,3,2,1,3,1}
 
-# s.add([1,2,3]) # error ("dont use dict ore list in set -> hash type")
 
-# print(s)
-print(len(s))
-print(1 in s)
-#
 # print('--add--')
 # s.add('b')
 # s.add('b')
@@ -295,21 +295,21 @@ because the the set member are Hashable
 
 """for - while"""
 
-print("----- example 1 ----")
+# print("----- example 1 ----")
 # count = 5
 # while count > 0:
 #     print('continue' + str(count))
 #     count -= 1
 
-print("----- example 2 ----")
+# print("----- example 2 ----")
 # for i in range (2,10,3):
 #     print(i)
 
-print("----- example 3 ----")
+# print("----- example 3 ----")
 for key in d:  # you can iterate dictionaries too!
     print(key, ':', d[key])
 
-print('-----------')
+# print('-----------')
 
 print(list(d.items()))
 
